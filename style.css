@@ -1,9 +1,16 @@
+@media only screen and (max-width: 590px) {
 * {
     margin: 0;
     padding: 0;
 }
 body {
-    font-family: ;
+    /*Use a unique and descriptive class name
+    <weight>: Use a value from 100 to 900 */
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
     width: 375px;
     margin: auto;
     background: hsl(30, 38%, 92%);
@@ -11,44 +18,70 @@ body {
 .container {
     width: 90%;
     margin: 1em auto 1em;
-    padding-bottom: 0.5em;
+    padding-bottom: 1em;
     background: hsl(0, 0%, 100%);
     border-top-left-radius: 0.5em;
     border-top-right-radius: 0.5em;
     border-bottom-left-radius: 0.5em;
     border-bottom-right-radius: 0.5em;
 }
-.first-container {
+.wrapper {
     width: 100%;
 }
-.first-container img {
+.wrapper img {
     width: 100%;
     border-top-left-radius: 0.5em;
     border-top-right-radius: 0.5em;
     
 }
-.second-container {
+.second-wrapper {
     width: 85%;
     margin: auto;
     background: hsl(0, 0%, 100%);
 }
 #logo {
     font-size: 14px;
+    color: hsl(228, 12%, 48%);
     text-transform: uppercase;
     letter-spacing: 0.3em;
     padding: 1em 0 1em 0;
 }
 h1 {
     line-height: 1em;
+    color: hsl(212, 21%, 14%);
 }
 p.description {
     font-size: 14px;
-    line-height: 1.5em;
-    padding: 0.5em 0;
+    line-height: 1.6em;
+    padding: 0.8em 0;
+    color: hsl(228, 12%, 48%);
 }
 #price {
-    display: ;
-    padding-bottom: 1em;
+    display: flex;
+    padding-bottom: 0.8em;
+    padding-top: 0.7em;
+}
+h1, #amount {
+    /*<uniquifier>: Use a unique and descriptive class name
+    <weight>: Use a value from 100 to 900 */
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+}
+#amount {
+    margin-top: 0;
+    color: hsl(158, 36%, 37%);
+    font-size: 2em;
+    font-weight: bold;
+}
+s {
+    padding: 0.7em 0 0em 1em;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
 }
 #button {
     width: 100%;
@@ -60,11 +93,147 @@ button.shopping-button {
     color: hsl(0, 0%, 100%);
     font-weight: bold;
     padding: 1em;
-    font-size: 0.8em;
+    font-size: 14px;
     margin: auto;
     border: none;
     border-radius: 0.5em;
 }
 .shopping-button img {
-    margin-right: 0.5em;
+    margin-right: 0.7em;
+}
+.shopping-button:hover {
+    background: hsl(158, 36%, 20%);
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+.desktop-design {
+    display: none;
+}
+}
+@media only screen and (min-width: 600px) and  (max-width: 1440px){
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        width: 1440px;
+        margin: auto;
+        background: hsl(30, 38%, 92%);
+    }
+    .container {
+        width: 95%;
+        margin: 20% auto;
+        display: flex;
+        background: hsl(0, 0%, 100%);
+            border-top-right-radius: 0.8em;
+            border-bottom-right-radius: 0.8em;
+    }
+    .mobile-design {
+        display: none;
+    }
+    .wrapper {
+        width: 100%;
+        border-top-left-radius: 0.8em;
+            border-bottom-left-radius: 0.8em;
+    }
+    .wrapper img {
+        width: 100%;
+        height: 100%;
+            border-top-left-radius: 0.8em;
+            border-bottom-left-radius: 0.8em;
+    }
+    .second-wrapper {
+        width: 70%;
+        padding: 4em 4em 0 4em;
+            border-top-right-radius: 0.8em;
+            border-bottom-right-radius: 0.8em;
+    }
+    #logo {
+        color: hsl(228, 12%, 48%);
+        text-transform: uppercase;
+        letter-spacing: 0.3em;
+        padding: 1em 0 0 0;
+        margin-top: 1em;
+        font-size: 2em;
+    }
+    h1 {
+        line-height: 1em;
+        color: hsl(212, 21%, 14%);
+        font-size: 4em;
+        margin-top: 0.8em;
+    }
+    p.description {
+        line-height: 1.65em;
+        padding: 0.8em 0;
+        margin-top: 0.8em;
+        color: hsl(228, 12%, 48%);
+        font-size: 2em;
+    }
+    #price {
+        display: flex;
+        margin-top: 1.5em;
+        margin-bottom: 3.5em;
+    }
+    h1, #amount {
+    /*<uniquifier>: Use a unique and descriptive class name
+    <weight>: Use a value from 100 to 900 */
+        font-family: "Fraunces", serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+    }
+    #amount {
+        margin-top: 0;
+        color: hsl(158, 36%, 37%);
+        font-weight: bold;
+        font-size: 4em;
+    }
+    s {
+        padding: 0.7em 0 0em 1em;
+       font-size: 14px;
+        color: hsl(228, 12%, 48%);
+        font-size: 2em;
+    }
+    #button {
+        width: 100%;
+        margin: 0 auto 0 auto;
+    }
+    button.shopping-button {
+        width: 100%;
+        background: hsl(158, 36%, 37%);
+        color: hsl(0, 0%, 100%);
+        font-weight: bold;
+        padding: 1em;
+        font-size: 2em;
+        margin: auto;
+        border: none;
+        border-radius: 0.5em;
+    }
+    .shopping-button img {
+        margin-right: 0.7em;
+        width: 1em;
+        height: 1em;
+    }
+    .shopping-button:hover {
+        background: hsl(158, 36%, 20%);
+    }
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+    }
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+    }
 }
